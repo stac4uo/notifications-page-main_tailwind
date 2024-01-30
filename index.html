@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body
-    class="w-[100vw] max-w-screen-sm flex flex-col justify-center items-center mt-10 font-Plus Jakarta Sans gap-5 mx-auto"
+    class="w-[100vw] h-screen bg-lightGrayishBlue2 flex flex-col sm:justify-center items-center  font-Plus Jakarta Sans"
   >
+  <div class="max-w-lg md:h-[75%]  bg-white flex flex-col justify-center items-center gap-5 rounded-md py-5 mb-10">
     <section class="w-[90%] flex justify-between items-center">
       <h1 class="text-2xl font-bold">
         Notifications
@@ -25,7 +26,7 @@
           class="px-3 text-lg font-bold bg-veryDarkBlue text-white rounded-md"
         ></span>
       </h1>
-      <p id="allRead" class="cursor-pointer">Mark all as read</p>
+      <p id="allRead" class="cursor-pointer text-grayishBlue text-sm hover:text-cyan-700 hover:font-semibold">Mark all as read</p>
     </section>
 
     <main class="w-[90%] flex flex-col gap-2">
@@ -37,13 +38,13 @@
           alt="mark Avatar"
           class="w-10 self-start"
         />
-        <p class="text-darkGrayishBlue">
+        <p class="text-darkGrayishBlue relative">
           <span class="text-veryDarkBlue font-bold">Mark Webber</span> reacted
           to your recent post
-          <span class="text-cyan-800 font-bold relative"
+          <span class="text-cyan-700 hover:text-cyan-950 font-bold cursor-pointer"
             >My first tournament today!
             <span
-              class="dot w-2 h-2 bg-red-500 rounded-[50%] absolute top-[30%] ml-2"
+              class="dot w-2 h-2 bg-red-500 rounded-[50%] absolute top-[40%] ml-2 cursor-auto"
             ></span
           ></span>
           <br /><span class="text-grayishBlue">1m ago</span>
@@ -59,7 +60,7 @@
           class="w-10 self-start"
         />
         <p class="text-darkGrayishBlue relative">
-          <span class="text-veryDarkBlue font-bold ">Angela Gray</span> followed
+          <span class="text-veryDarkBlue font-bold cursor-pointer hover:text-cyan-950">Angela Gray</span> followed
           you
           <span
             class="dot w-2 h-2 bg-red-500 rounded-[50%] absolute top-2 ml-2"
@@ -79,8 +80,8 @@
         <p class="text-darkGrayishBlue relative">
           <span class="text-veryDarkBlue font-bold">Jacob Thompson</span> has
           joined your group
-          <span class="text-cyan-800 font-bold">Chess Club <span
-            class="dot w-2 h-2 bg-red-500 rounded-[50%] absolute top-2 ml-2"
+          <span class="text-cyan-800 font-bold cursor-pointer hover:text-cyan-950">Chess Club <span
+            class="dot w-2 h-2 bg-red-500 rounded-[50%] absolute top-[45%] ml-2 w-[450px]:top-[30%] sm:top-[20%] md:"
           ></span></span> <br /><span
             class="text-grayishBlue"
             >1 day ago</span
@@ -103,7 +104,7 @@
           </p>
 
           <p
-            class="text-darkGrayishBlue text-base border-solid border-[1px] p-4 mt-2 leading-4"
+            class="text-darkGrayishBlue text-base border-solid border-[1px] p-4 mt-2 leading-4 cursor-pointer hover:bg-lightGrayishBlue2"
           >
             Hello, thanks for setting up the Chess Club. I've been a member for
             a few weeks now and I'm already having lots of fun and improving my
@@ -131,7 +132,7 @@
         <img
           src="./images/image-chess.webp"
           alt="girl play Chess"
-          class="w-10 rounded-md self-start"
+          class="w-10 rounded-md self-start cursor-pointer hover:border-2"
         />
       </section>
 
@@ -169,7 +170,7 @@
         </p>
       </section>
     </main>
-
+  </div>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
