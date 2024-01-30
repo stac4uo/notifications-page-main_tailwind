@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Notifications page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="w-[100vw] max-w-screen-sm flex flex-col justify-center items-center mt-10 font-Plus Jakarta Sans gap-5 mx-auto"
+  >
+    <section class="w-[90%] flex justify-between items-center">
+      <h1 class="text-2xl font-bold">
+        Notifications
+        <span
+          id="numberNote"
+          class="px-3 text-lg font-bold bg-veryDarkBlue text-white rounded-md"
+        ></span>
+      </h1>
+      <p id="allRead" class="cursor-pointer">Mark all as read</p>
+    </section>
+
+    <main class="w-[90%] flex flex-col gap-2">
+      <section
+        class="bg-veryLightGrayishBlue flex justify-start items-centers gap-5 p-2 text-sm rounded-md unread"
+      >
+        <img
+          src="./images/avatar-mark-webber.webp"
+          alt="mark Avatar"
+          class="w-10 self-start"
+        />
+        <p class="text-darkGrayishBlue">
+          <span class="text-veryDarkBlue font-bold">Mark Webber</span> reacted
+          to your recent post
+          <span class="text-cyan-800 font-bold relative"
+            >My first tournament today!
+            <span
+              class="dot w-2 h-2 bg-red-500 rounded-[50%] absolute top-[30%] ml-2"
+            ></span
+          ></span>
+          <br /><span class="text-grayishBlue">1m ago</span>
+        </p>
+      </section>
+
+      <section
+        class="bg-veryLightGrayishBlue flex justify-start items-centers gap-5 p-2 text-sm rounded-md unread"
+      >
+        <img
+          src="./images/avatar-angela-gray.webp"
+          alt="Angela Avatar"
+          class="w-10 self-start"
+        />
+        <p class="text-darkGrayishBlue relative">
+          <span class="text-veryDarkBlue font-bold ">Angela Gray</span> followed
+          you
+          <span
+            class="dot w-2 h-2 bg-red-500 rounded-[50%] absolute top-2 ml-2"
+          ></span>
+          <br /><span class="text-grayishBlue">5m ago</span>
+        </p>
+      </section>
+
+      <section
+        class="bg-veryLightGrayishBlue flex justify-start items-centers gap-5 p-2 text-sm rounded-md unread"
+      >
+        <img
+          src="./images/avatar-jacob-thompson.webp"
+          alt="Jacob Avatar"
+          class="w-10 self-start"
+        />
+        <p class="text-darkGrayishBlue relative">
+          <span class="text-veryDarkBlue font-bold">Jacob Thompson</span> has
+          joined your group
+          <span class="text-cyan-800 font-bold">Chess Club <span
+            class="dot w-2 h-2 bg-red-500 rounded-[50%] absolute top-2 ml-2"
+          ></span></span> <br /><span
+            class="text-grayishBlue"
+            >1 day ago</span
+          >
+        </p>
+      </section>
+      <section
+        class="flex justify-start items-centers gap-5 p-2 text-sm rounded-md"
+      >
+        <img
+          src="./images/avatar-rizky-hasanuddin.webp"
+          alt="Rizky Avatar"
+          class="w-10 self-start"
+        />
+        <div>
+          <p class="text-darkGrayishBlue">
+            <span class="text-veryDarkBlue font-bold">Rizky Hasanuddin</span>
+            sent you a private message <br />
+            <span class="text-grayishBlue">5 days ago</span>
+          </p>
+
+          <p
+            class="text-darkGrayishBlue text-base border-solid border-[1px] p-4 mt-2 leading-4"
+          >
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="flex items-centers gap-5 p-2 text-sm rounded-md justify-between"
+      >
+        <div class="flex gap-5">
+          <img
+            src="./images/avatar-kimberly-smith.webp"
+            alt="Kimberly Avatar"
+            class="w-10 self-start"
+          />
+          <p class="text-darkGrayishBlue">
+            <span class="text-veryDarkBlue font-bold">Kimberly Smith </span
+            >commented on your picture <br /><span class="text-grayishBlue"
+              >1 week ago</span
+            >
+          </p>
+        </div>
+        <img
+          src="./images/image-chess.webp"
+          alt="girl play Chess"
+          class="w-10 rounded-md self-start"
+        />
+      </section>
+
+      <section
+        class="flex justify-start items-centers gap-5 p-2 text-sm rounded-md"
+      >
+        <img
+          src="./images/avatar-nathan-peterson.webp"
+          alt="Nathan Avatar"
+          class="w-10 self-start"
+        />
+        <p class="text-darkGrayishBlue">
+          <span class="text-veryDarkBlue font-bold">Nathan Peterson </span
+          >reacted to your recent post
+          <span class="font-bold text-darkGrayishBlue"
+            >5 end-game strategies to increase your win rate</span
+          ><br /><span class="text-grayishBlue">2 weeks ago</span>
+        </p>
+      </section>
+
+      <section
+        class="flex justify-start items-centers gap-5 p-2 text-sm rounded-md"
+      >
+        <img
+          src="./images/avatar-anna-kim.webp"
+          alt="Anna Avatar"
+          class="w-10 self-start"
+        />
+        <p class="text-darkGrayishBlue">
+          <span class="text-veryDarkBlue">Anna Kim</span>left the group
+          <span class="text-cyan-800 font-bold">Chess Club</span><br /><span
+            class="text-grayishBlue"
+            >2 weeks ago</span
+          >
+        </p>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">stac4uo</a>.
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
